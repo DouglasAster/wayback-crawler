@@ -5,7 +5,8 @@ This project archives a web page and all links one layer deep using the Internet
 ## How it Works
 
 The script:
-- Starts with a seed URL (currently configured to `icepicx.is/search`)
+
+- Starts with a seed URL
 - Extracts all links from that page (same domain only)
 - Submits each URL to Internet Archive's SavePageNow API using credentials already defined in the script
 - Archives the pages for preservation
@@ -15,6 +16,7 @@ The script:
 ### Option 1: Run Locally with Python
 
 1. Install dependencies:
+
    ```bash
    pip install -r requirements.txt
    ```
@@ -27,6 +29,7 @@ The script:
 ### Option 2: Run with Docker
 
 1. Build the image:
+
    ```bash
    docker build -t archive-crawl .
    ```
@@ -39,13 +42,8 @@ The script:
 ## Configuration
 
 The script contains the following configuration:
-- `SEED_URL`: The starting URL to crawl (default: `icepicx.is/search`)
+
+- `SEED_URL`: The starting URL to crawl
 - `ACCESS_KEY` and `SECRET_KEY`: Internet Archive API credentials
 
 **Security Note:** The script contains hardcoded API keys and credentials. Before sharing or deploying, consider moving these to environment variables for security.
-
-## Requirements
-
-- Python 3.12+ (or any Python 3.x)
-- `beautifulsoup4` - HTML parsing
-- `requests` - HTTP requests
