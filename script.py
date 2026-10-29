@@ -9,11 +9,7 @@ from bs4 import BeautifulSoup
 load_dotenv()
 
 # --- CONFIGURATION ---
-# Done: OR, WA, CA, MN, TX, MA, DC, FL
-# Next: CO, CT, WV, NM, MI, ME, OK, VA
-# Then: CBP
-# Then: check paginaysh
-SEED_URL = "https://icepicx.is/search?agencies=ICE&name=&city=&states=FL&title=#results"
+SEED_URL = ""
 
 # Get your keys from: https://archive.org
 ACCESS_KEY = os.getenv("ACCESS_KEY")
