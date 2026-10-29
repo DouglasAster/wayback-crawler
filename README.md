@@ -1,4 +1,4 @@
-# Archive Crawl
+# Wayback Crawler
 
 This project archives a web page and all links one layer deep using the Internet Archive's SavePageNow API.
 
@@ -22,6 +22,7 @@ The script:
    ```
 
 2. Run the script:
+
    ```bash
    python script.py
    ```
@@ -35,6 +36,7 @@ The script:
    ```
 
 2. Run the container:
+
    ```bash
    docker run archive-crawl
    ```
